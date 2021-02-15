@@ -24,7 +24,7 @@ int main (int argc, char * argv[], char ** envp) {
   byte buf[10];
   int fd;
   size_t nbyte;
-  nbytes = sizeof(buf);
+  nbyte = sizeof(buf);
   int retval;
   int counter;
 
@@ -32,7 +32,7 @@ int main (int argc, char * argv[], char ** envp) {
   retval = read(fd,  (void *) &buf,nbyte);  
   for(int counter = 0; counter < 10; counter++)
     {
-        value = header[counter];
+        value = buf[counter];
         printf("Numbers Entered: %d \n", value);
     }
   
