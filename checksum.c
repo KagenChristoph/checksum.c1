@@ -22,6 +22,7 @@ int main (int argc, char * argv[], char ** envp) {
   byte checksum; 
   byte complement;
   byte remainder;
+  byte quotient;
   byte buf[count];
   int fd;
   size_t bytes;
