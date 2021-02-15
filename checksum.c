@@ -29,6 +29,11 @@ int main (int argc, char * argv[], char ** envp) {
 
   /* the following is the prototype for the read system call */
   retval = read(fd,  (void *) &buf,nbyte);  
+    for(int count = 0; count < 10; count++)
+    {
+        int value = header[count];
+        printf("Numbers Entered: %d \n", value);
+    }
   
   fprintf(stdout, "Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
   if (checksum != complement ) {
