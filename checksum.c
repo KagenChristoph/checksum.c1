@@ -20,9 +20,9 @@ int main (int argc, char * argv[], char ** envp) {
   int count = 10;
   int sum = 0;   
   byte checksum; 
-  byte complement;
-  byte remainder;
-  byte quotient;
+  int complement;
+  int remainder;
+  int quotient;
   byte buf[count];
   int fd;
   size_t bytes;
