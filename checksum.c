@@ -26,14 +26,13 @@ int main (int argc, char * argv[], char ** envp) {
   size_t nbyte;
   nbyte = sizeof(buf);
   int retval;
-  int value;
 
   /* the following is the prototype for the read system call */
   retval = read(fd,  (void *) &buf,nbyte);  
   for(int counter = 0; counter < 10; counter++)
     {
-        value = buf[counter];
-        printf("Numbers Entered: %d \n", value);
+        
+        printf(buf[counter]);
     }
   
   fprintf(stdout, "Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
