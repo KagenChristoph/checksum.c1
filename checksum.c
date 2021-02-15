@@ -32,7 +32,7 @@ int main (int argc, char * argv[], char ** envp) {
   for(int counter = 0; counter < 10; counter++)
     {
         
-        printf(buf[counter]);
+        printf((int)buf[counter]);
     }
   
   fprintf(stdout, "Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
