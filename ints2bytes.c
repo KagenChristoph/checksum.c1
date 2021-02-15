@@ -29,9 +29,9 @@ int main (int argc, char * argv[], char ** envp) {
 
   /* the following is the prototype for the read system call */
   retval = read(fd,  (void *) &buf,nbyte);  
-  for(int count = 0; count < 10; count++)
+  for(int i = 0; i < 10; i++)
     {
-        int value = buf[count];
+        int value = buf[i];
         printf("Numbers Entered: %d \n", value);
     }
   
