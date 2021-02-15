@@ -19,8 +19,8 @@ int main (int argc, char * argv[], char ** envp) {
 
   int count = 10;
   int sum = 0;   
-  int checksum; 
-  int complement;
+  byte checksum; 
+  byte complement;
   int remainder;
   int quotient;
   byte buf[count];
