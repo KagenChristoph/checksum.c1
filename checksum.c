@@ -24,7 +24,7 @@ int main (int argc, char * argv[], char ** envp) {
   byte buf[10];
   int fd;
   size_t nbyte;
-  nbytes = sizeof(buf);
+  nbyte = sizeof(buf);
   int retval;
 
   /* the following is the prototype for the read system call */
