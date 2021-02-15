@@ -28,7 +28,7 @@ int main (int argc, char * argv[], char ** envp) {
   int retval;
 
   /* the following is the prototype for the read system call */
-  retval = read(fd,  (void *) &buf,nbyte);  
+  retval = read(0,  (void *) &buf,nbyte);  
   for(int i = 0; i < 10; i++)
     {
         int value = buf[i];
