@@ -19,10 +19,10 @@ int main (int argc, char * argv[], char ** envp) {
 
   int count = 10;
   int sum = 0;   
-  byte checksum; 
-  byte complement;
-  byte remainder;
-  byte quotient;
+  int checksum; 
+  int complement;
+  int remainder;
+  int quotient;
   byte buf[count];
   int fd;
   size_t bytes;
@@ -34,7 +34,7 @@ int main (int argc, char * argv[], char ** envp) {
   retval = read(0,  (void *) &buf,10);  
   for(int i = 0; i < 10; i++)
     {
-        byte value = buf[i];
+        int value = (int)buf[i];
 	  printf("Numbers Entered: %d \n", value);
   }
   fprintf(stdout, "Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
