@@ -31,7 +31,7 @@ int main (int argc, char * argv[], char ** envp) {
   int checkPass = 5;
 
   /* the following is the prototype for the read system call */
-  retval = read(fd,  (void *) &buf,bytes);  
+  retval = read(0,  (void *) &buf,10);  
   for(int i = 0; i < 10; i++)
     {
         int value = buf[i];
