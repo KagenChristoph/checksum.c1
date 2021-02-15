@@ -18,11 +18,11 @@
 int main (int argc, char * argv[], char ** envp) {
 
   int count = 10;
-  int sum = 0;   
+  byte sum = 0;   
   byte checksum; 
-  int complement;
-  int remainder;
-  int quotient;
+  byte complement;
+  byte remainder;
+  byte quotient;
   byte buf[count];
   int fd;
   size_t bytes;
@@ -34,7 +34,7 @@ int main (int argc, char * argv[], char ** envp) {
   retval = read(fd,  (void *) &buf,bytes);  
   for(int i = 0; i < 10; i++)
     {
-        int value = buf[i];
+        byte value = buf[i];
 	  printf("Numbers Entered: %d \n", value);
 		if(value > max_int)
 		{
