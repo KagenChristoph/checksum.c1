@@ -19,8 +19,10 @@ int main (int argc, char * argv[], char ** envp) {
 
   int count = 10;
   int sum = 0;   
-  byte checksum; 
-  byte complement;
+  int checksum;         // The value of the 6th input integer
+  int quotient;             // The result of evaluating the assignment:  quotient   = sum / (max_int + 1);
+  int remainder;            // The result of evaluating the assignment:  remainder  = sum % (max_int + 1 );
+  int complement;   
   byte buf[10];
   int fd;
   size_t nbyte;
@@ -37,8 +39,17 @@ int main (int argc, char * argv[], char ** envp) {
           value = 256 + value;
         }
         printf("Numbers Entered: %d \n", value);
+    if(i == checkPass)
+		{
+			checksum = value;
+			value = 0;
+		}
+		sum += curVal;
     }
-  
+  quotient   = sum / (max_int + 1);
+	remainder  = sum % (max_int + 1 );
+	sum = quotient + remainder;
+	complement = max_int - sum;
   fprintf(stdout, "Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
   if (checksum != complement ) {
     fprintf(stderr, "Error Detected!\n"); 
