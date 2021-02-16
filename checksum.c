@@ -19,9 +19,9 @@ int main (int argc, char * argv[], char ** envp) {
 
   int count = 10;
   int sum = 0;   
-  int checksum;         // The value of the 6th input integer
-  int quotient;             // The result of evaluating the assignment:  quotient   = sum / (max_int + 1);
-  int remainder;            // The result of evaluating the assignment:  remainder  = sum % (max_int + 1 );
+  int checksum;        
+  int quotient;             
+  int remainder;            
   int complement;   
   byte buf[10];
   int fd;
