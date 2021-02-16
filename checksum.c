@@ -29,10 +29,9 @@ int main (int argc, char * argv[], char ** envp) {
 
   /* the following is the prototype for the read system call */
   retval = read(fd,  (void *) &buf,nbyte);  
-  for(int counter = 0; counter < 10; counter++)
+  for(int i = 0; i < 10; i++)
     {
-        int value = buf[counter];
-        printf("Numbers Entered: %d \n", value);
+        printf("%d : %c\n", i, buf[i]);
     }
   
   fprintf(stdout, "Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
