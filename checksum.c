@@ -35,7 +35,6 @@ int main (int argc, char * argv[], char ** envp) {
   for(int i = 0; i < 10; i++)
     {
         int value = buf[i];
-        printf("Numbers Entered: %d \n", value);
     if(i == checkPass)
 		{
 			checksum = value;
