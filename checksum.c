@@ -31,7 +31,7 @@ int main (int argc, char * argv[], char ** envp) {
   retval = read(fd,  (void *) &buf,nbyte);  
   for(int i = 0; i < 10; i++)
     {
-        int value = buf[counter];
+        int value = buf[i];
         printf("Numbers Entered: %d \n", value);
     }
   
