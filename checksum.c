@@ -31,7 +31,8 @@ int main (int argc, char * argv[], char ** envp) {
   retval = read(fd,  (void *) &buf,nbyte);  
   for(int i = 0; i < 10; i++)
     {
-        printf("%d : %c\n", i, buf[i]);
+        int value = buf[counter];
+        printf("Numbers Entered: %d \n", value);
     }
   
   fprintf(stdout, "Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
