@@ -32,6 +32,10 @@ int main (int argc, char * argv[], char ** envp) {
   for(int i = 0; i < 10; i++)
     {
         int value = buf[i];
+        if(value < 0)
+        {
+          value = 256 + value;
+        }
         printf("Numbers Entered: %d \n", value);
     }
   
