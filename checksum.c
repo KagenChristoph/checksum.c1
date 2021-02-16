@@ -28,6 +28,7 @@ int main (int argc, char * argv[], char ** envp) {
   size_t nbyte;
   nbyte = sizeof(buf);
   int retval;
+  int checkPass = 5;
 
   /* the following is the prototype for the read system call */
   retval = read(fd,  (void *) &buf,nbyte);  
