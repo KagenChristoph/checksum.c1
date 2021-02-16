@@ -13,7 +13,7 @@
 #include <unistd.h>
 
 #define max_int (255)
-#define byte char
+#define byte (unsigned char)
 
 int main (int argc, char * argv[], char ** envp) {
 
@@ -35,10 +35,6 @@ int main (int argc, char * argv[], char ** envp) {
   for(int i = 0; i < 10; i++)
     {
         int value = buf[i];
-        if(value < 0)
-        {
-          value = 256 + value;
-        }
         printf("Numbers Entered: %d \n", value);
     if(i == checkPass)
 		{
