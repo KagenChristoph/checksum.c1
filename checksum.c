@@ -45,7 +45,7 @@ int main (int argc, char * argv[], char ** envp) {
 			checksum = value;
 			value = 0;
 		}
-		sum += curVal;
+		sum += value;
     }
   quotient   = sum / (max_int + 1);
 	remainder  = sum % (max_int + 1 );
