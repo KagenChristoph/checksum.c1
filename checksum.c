@@ -1,7 +1,7 @@
 /********************************/
-/* Program Name:                */
-/* Author:                      */
-/* Date:                        */
+/* Program Name: checksum.c     */
+/* Author:Kagen Christoph       */
+/* Date:    2/13/2021           */
 /********************************/
 /* Description:                 */
 /* Validation Checks:           */
